@@ -1,0 +1,30 @@
+{
+  "name": "nodeduino-api",
+  "version": "1.0.0",
+  "description": "Arduino + Javascript Fatec API",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=development nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabriel-barreto/embarcados-fatec/tree/master/07%20-%20Arduino%20+%20Javascript"
+  },
+  "keywords": [
+    "minicurso",
+    "arduino",
+    "javascript",
+    "fatec",
+    "embarcados"
+  ],
+  "author": "Gabriel Barreto <barreto-gabriel@outlook.com> (https://gabriel-barreto.tech)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
+}
