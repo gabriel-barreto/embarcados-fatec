@@ -4,7 +4,8 @@
   "description": "Arduino + Javascript Fatec API",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=development nodemon index.js"
+    "dev": "sudo NODE_ENV=development nodemon index.js",
+    "start": "sudo NODE_ENV=production node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,11 +21,13 @@
   "author": "Gabriel Barreto <barreto-gabriel@outlook.com> (https://gabriel-barreto.tech)",
   "license": "MIT",
   "devDependencies": {
+    "galileo-io": "^0.10.0",
     "nodemon": "^1.17.3"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "johnny-five": "^0.14.3",
     "morgan": "^1.9.0"
   }
 }
