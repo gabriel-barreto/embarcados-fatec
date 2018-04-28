@@ -21,6 +21,10 @@ function toggleLights() {
     on.classList.add('is-off');
     off.classList.remove('is-off');
     off.classList.add('is-on');
+
+    apiService.toggle()
+        .then(apiReply => console.log(apiReply))
+        .then(err => console.log(err));
 }
 
 window.addEventListener('DOMContentLoaded', () => {

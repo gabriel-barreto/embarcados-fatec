@@ -1,21 +1,15 @@
 import config from '../Configs/api.config';
 
-const turnOn = () => {
-    fetch(`${config.url}${config.versions.v1}/turnon`)
+/**
+ * Inverte o atual status da lampada!
+ * 
+ */
+const toggle = () => {
+    return fetch(`${config.url}${config.versions.v1}/lamp/toggle`)
         .then((apiResponse) => apiResponse.json())
-        .then((jsonResponse) => console.log(jsonResponse))
-        .catch((err) => console.error(err));
+        .then((jsonResponse) => jsonResponse)
+        .catch((err) => new Error(err));
 };
 
-const turnOff = () => {
-    fetch(`${config.url}${config.versions.v1}/turnoff`)
-        .then((apiResponse) => apiResponse.json())
-        .then((jsonResponse) => console.log(jsonResponse))
-        .catch((err) => console.error(err));
-};
 
-const sayHello = () => {
-    console.log('Hello world!');
-};
-
-export { turnOn, turnOff, sayHello };
+export { toggle };

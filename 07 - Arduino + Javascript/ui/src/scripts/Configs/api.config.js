@@ -1,8 +1,8 @@
 const configs = {
-    url: 'https://127.0.0.1/api',
+    url: 'http://127.0.0.1:5000/api',
     versions: {
         v1: '/v1',
     },
 };
 
-export { configs };
+export default configs;
